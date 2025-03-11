@@ -1,0 +1,120 @@
+#home
+*{
+margin:0px;
+padding:0px;
+box-sizing: border-box;
+}
+
+body{
+height:100ch;
+background-color:#fff;
+}
+
+.navigation{
+height:100vh;
+width:65px;
+position:relative;
+background-color:#8E8E8E;
+box-shadow:10px 0 0 #97BA6D;
+border-left:10px solid #8E8E8E;
+overflow-x:hidden;
+transition:all 0.7s;
+}
+
+.navigation ul{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+padding-top:20px;
+padding-left:10px;
+}
+
+.navigation:hover{
+width:250px;
+}
+
+.navigation ul li{
+list-style: none;
+display:block;
+width:100%;
+position:relative;
+border-radius:15px;
+}
+
+.navigation ul li:hover{
+background-color:#777777;
+}
+
+.navigation ul li.active{
+background-color:#97BA6D
+}
+
+.navigation ul li.active::before{
+content:"";
+position:absolute;
+width:30px;
+height:30px;
+top:-30px;
+right:0;
+border-radius:50%;
+box-shadow:15px 20px 0 #97BA6D;
+}
+
+.navigation ul li.active::after{
+content:"";
+position:absolute;
+width:30px;
+height:30px;
+top:60px;
+right:0;
+border-radius:55%;
+box-shadow:15px -15px 0 #97BA6D;
+}
+
+.navigation ul li a {
+text-decoration:none;
+color:#FFF;
+width:100%;
+display:flex;
+position:relative;
+}
+
+.navigation ul li a .icon{
+display:block;
+min-width:50px;
+height:60px;
+line-height:70px;
+text-align:center;
+}
+
+.navigation ul li a .icon ion-icon{
+font-size:1.5em;
+}
+
+.navigation ul li a .title{
+padding-left:10px
+height:60;
+line-height:60px;
+white-space:nowrap;
+}
+
+.menu,.main{
+float:left;
+padding:0px;
+}
+
+.menu {
+width:80px;
+text-align:center;
+} 
+
+.main {
+margin:50px;
+background: linear-gradient(#EAEAEA,80%,#D7D9DB);
+width:200px;
+height:300px;
+text-align:center;
+margin-left:10px;
+border-radius:20px;
+}
