@@ -1,0 +1,11 @@
+#home
+*{
+
+box-sizing: border-box;
+}
+
+body{
+color: #000000;
+background-color:#EAEAEA;
+position:relative;
+}
